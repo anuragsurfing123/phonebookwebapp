@@ -94,15 +94,15 @@ $db = mysqli_connect('localhost', 'root', '', 'phonebook');
     <div class="col">
     
     
-    <a class="btned1" href='updatedetail.php?edit=<?php echo $row['id']?>' >Edit</a>
-    <a class="btned1" href="function.php?delete=<?php echo $row['id']?>">remove</a>
+    <a class="btn btn-info" style="border-radius:10px;" href='updatedetail.php?edit=<?php echo $row['id']?>' role='button'>Edit</a><br>
+    <a class="btn btn-danger" style="border-radius:10px;" href="function.php?delete=<?php echo $row['id']?>" role='button'>remove</a>
     
     
     
     </div>
     </form>
   </div>
-  <div class="row" style="background-color:white; " >
+  <div class="row"  >
     <div class="col"><?php
     echo "<i class='fa fa-phone' aria-hidden='true'></i> {$row['mob1']} <br>";
     echo "<i class='fa fa-phone' aria-hidden='true'></i> {$row['mob2']}"
